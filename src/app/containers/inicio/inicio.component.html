@@ -1,0 +1,22 @@
+<div *ngIf="!loading">
+  <div *ngFor="let usuario of usuarios" class="imageContainer">
+    <img [src]="usuario.img">
+    <div >
+      <p>Name: </p>
+      <p>{{usuario.name}}</p>
+    </div>
+    <div >
+      <p>Email: </p>
+      <p>{{usuario.email}}</p>
+    </div>
+    <div >
+      <p>Company: </p>
+      <p>{{usuario.company.name}}</p>
+    </div>
+    <div >
+      <p>City: </p>
+      <p>{{usuario.address.city}}</p>
+    </div>
+    <p></p>
+  </div>
+</div>
